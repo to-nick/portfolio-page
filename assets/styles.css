@@ -1,0 +1,848 @@
+/* ######################################################### */
+/* ######################################################### */
+/* UNIVERSAL STYLES */
+/* ######################################################### */
+/* ######################################################### */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+}
+
+/* ######################################################### */
+/* ######################################################### */
+/* NAVBAR STYLES */
+/* ######################################################### */
+/* ######################################################### */
+
+nav{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Teko", sans-serif;
+    z-index: 11;
+    left: 50%;
+    padding-top: 1rem;
+    transform: translate(-50%);
+    background-color: #3a3a3a;
+}
+
+.nav-logo{
+    font-size: clamp(3rem, 3vw, 5rem);
+    padding: 0.5rem 2rem;
+    color: rgb(255, 255, 255)
+}
+
+.nav-list{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    padding: 1rem;
+    font-size: clamp(2rem, 3vw, 3rem);
+    color: rgb(210, 204, 204);
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: blanchedalmond; 
+}
+
+.nav-item a:hover{
+    color:rgb(110, 112, 127);
+    cursor: pointer;
+}
+
+.download-resume{
+    font-size: clamp(2rem, 3vw, 3rem);
+    background-color: grey;
+    color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.hamburger{
+    margin: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: clamp(3rem, 2vw, 3rem);
+    height: 0.5rem;
+    background-color: rgb(210, 204, 204);
+    z-index: 13;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem 0.5rem;
+}
+
+/* ######################################################### */
+/* ######################################################### */
+/* LANDING PAGE STYLES */
+/* ######################################################### */
+/* ######################################################### */
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(228, 224, 224);
+}
+
+
+.landing-image-container{
+    position: relative;
+    display: flex;
+    width: 1400px;
+    justify-content: center;
+    max-width: 1440px;
+    overflow: hidden;
+    background-size: cover;
+    margin: 2rem 0 1rem 0;
+}
+
+.about-me-section{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    z-index: 10;
+    background-color: rgba(105, 104, 104, 0.9);
+    gap: 1rem;
+    top: 5%;
+}
+
+.about-me-text-container{
+    width: 65%;
+}
+
+.about-me-section h1{
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-family: "Teko", sans-serif;
+    color: blanchedalmond;
+    padding-bottom: 1rem;
+    
+}
+
+.about-me-section p{
+    font-size: clamp(1.25rem, 2vw, 2rem);
+    font-family: "Teko", sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+.hero-image-container{
+    display: flex;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 20vw;
+    align-self: center;
+    
+}
+
+.hero-image{
+    width: 100%;
+    border: 2px black solid;
+    border-radius: 50%;
+
+}
+
+.triangle-1{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 0vw solid transparent;
+    border-right: 60vw solid transparent;
+    border-bottom: 80vh solid rgb(132, 132, 132, 0.8);
+    bottom: 5vh;
+    left: 0;
+}
+
+.triangle-2{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 60vw solid transparent;
+    border-right: 0vw solid transparent;
+    border-top: 80vh solid rgb(132, 132, 132, 0.8);
+    top: 0rem;
+    right: 0;
+}
+
+/* ######################################################### */
+/* ######################################################### */
+/* ABOUT ME STYLES */
+/* ######################################################### */
+/* ######################################################### */
+
+.about-me-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    width: 1400px;
+    height: auto;
+    max-width: 1440px;
+    gap: 2rem;
+}
+
+.about-me-container h1{
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: clamp(2rem, 3vw, 4rem);
+    z-index: 2;
+    color:antiquewhite;
+    background-color: #3a3a3a;
+    width: 100%;
+}
+
+.about-me-container p{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: clamp(1rem, 3vw, 2rem);
+    text-align: center;
+}
+
+/* ######################################################### */
+/* ######################################################### */
+/* THE STACK SECTON STYLES */
+/* ######################################################### */
+/* ######################################################### */
+
+.stack-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    width: 1400px;
+    height: auto;
+    max-width: 1440px;
+    gap: 2rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.stack-container h2{
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: clamp(2rem, 3vw, 4rem);
+    z-index: 2;
+    color:antiquewhite;
+    background-color: #3a3a3a;
+    width: 100%;
+}
+
+.stack-icon-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-container p{
+    font-family: "Teko", sans-serif;
+    background-color: rgb(199, 193, 193);
+    padding: 0.25rem;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.stack-icon{
+    width: clamp(4rem, 10vw, 10rem);
+    height: clamp(4rem, 10vh, 10rem);
+    transition: transform 0.3s ease;
+}
+
+.stack-icon:hover{
+    transform: scale(1.2)
+}
+
+/* ######################################################### */
+/* ######################################################### */
+/* The Projects Section Styles */
+/* ######################################################### */
+/* ######################################################### */
+
+.projects-container{
+    width: 1400px;
+    max-width: 1440px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.projects-container h1{
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: clamp(2rem, 3vw, 4rem);
+    z-index: 2;
+    color:antiquewhite;
+    background-color: #3a3a3a;
+    width: 100%;
+}
+
+
+.project-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(156, 156, 156);
+    border-radius: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgb(110, 112, 127);
+    font-family: "Teko", sans-serif;
+    background-color: white;
+}
+
+.home-project-content-container{
+    display: flex;
+}
+
+.project-container h2{
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    padding: 1rem 1rem 0 1rem;
+    text-decoration: underline;
+}
+
+.project-text{
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-family: "Open Sans", sans-serif;
+    padding: 1rem;;
+}
+
+.home-image-container{
+    display: flex;
+    position:relative;
+    background-color: white;
+    z-index: 2;
+    width: clamp(5rem, 30vw, 30rem);
+}
+
+.project-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-project-image{
+    width: clamp(5rem, 30vw, 30rem);
+}
+
+.stack-tag-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.node-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color: #3c873a;
+    color: rgb(0, 0, 0);
+    box-shadow: black 2px 2px 5px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.react-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color: #61DBFB;
+    color: black;
+    box-shadow: black 2px 2px 5px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.html-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color: #e34c26;
+    box-shadow: black 2px 2px 5px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.css-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color: #264de4;
+    box-shadow: black 2px 2px 5px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.express-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color: #828282;
+    box-shadow: black 2px 2px 5px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.mysql-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color: #00758f;
+    box-shadow: black 2px 2px 5px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.js-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color:  #F0DB4F;
+    box-shadow: black 2px 2px 5px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.knex-stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 1rem;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background-color:  #e16426;
+    box-shadow: black 2px 2px 5px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.mini-icon{
+    width: clamp(1rem, 1vw, 1.25rem);
+}
+
+.access-work-container{
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    font-size: clamp(1rem, 2vw, 1rem);
+    font-family: "Open Sans", sans-serif;
+}
+
+.project-link-anchor, .source-code-anchor{
+    display: flex;
+    background-color: rgb(135, 135, 241);
+    color: white;
+    padding: 0.75rem;
+    border-radius: 5%;
+    border: black 2px solid;
+    gap: 1rem;
+    width: 50%;
+    justify-content: center;
+    text-wrap: nowrap;
+    text-decoration: none;
+}
+
+.project-link-anchor:hover, .source-code-anchor:hover{
+    background-color: rgb(85, 85, 238);
+    border: 2px solid rgb(90, 86, 86);
+}
+
+/* ####################################################### 
+ #########################################################
+ Contact Section Styles
+ ######################################################### 
+ #########################################################*/
+
+ .contact-container{
+    width: 1400px;
+    max-width: 1440px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.contact-container h1{
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-size: clamp(2rem, 3vw, 4rem);
+    z-index: 2;
+    color:antiquewhite;
+    background-color: #3a3a3a;
+    width: 100%;
+}
+
+.contact-info-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+
+.contact-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-item img{
+    width: clamp(5rem, 5vw, 10rem);
+}
+
+.contact-item p{
+    font-size: clamp(1rem, 3vw, 3rem);
+    font-family: "Teko", sans-serif;
+    
+}
+
+/* ####################################################### 
+ #########################################################
+ Footer Styles
+ ######################################################### 
+ #########################################################*/
+
+ footer{
+    text-align: center;
+    background-color: black;
+    color: white;;
+    height: 5vh;
+    z-index: 100;
+    align-content: center;
+    font-family: "teko", sans-serif;
+ }
+
+
+/* ####################################################### 
+ #########################################################
+ Media Queries
+ ######################################################### 
+ #########################################################*/
+
+ @media(max-width: 1900px){
+
+    .hero-image-container{
+        height: 30vw;
+        width: 30vw;
+
+    }
+    .about-me-text-container h1{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 1650px){
+
+    .hero-image-container{
+        align-items: center;
+
+    }
+    .about-me-text-container h1{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 1440px){
+    nav{
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    .landing-image-container{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-me-section{
+        padding: 3rem;
+    }
+
+    .hero-image-container{
+        align-self: center;
+    }
+
+    .about-me-text-container{
+        align-content: center;
+    }
+
+    .about-me-container{
+        width: 95%;
+    }
+
+    .projects-container{
+        width: 95%;
+    }
+    .stack-container{
+        width: 95%;
+    }
+    .contact-container{
+        width: 95%;
+    }
+}
+
+@media(max-width: 1300px){
+    .home-image-container{
+        display: none;
+    }
+
+    .stack-icon-container{
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 768px){
+
+    /* NAVBAR */
+    .hamburger{
+        display: block;
+        position: relative;
+        align-content: center;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(0.99rem) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-0.99rem) rotate(-45deg);
+    }
+
+    nav{
+        position: relative;
+        padding: 0rem;
+
+    }
+
+    .nav-list{
+        position: fixed;
+        font-size: 2rem;
+        right: -100%;
+        top: 5.5rem;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(93, 92, 92, 0.97);
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        transition: 0.3s;
+        z-index: 11;
+    }
+
+    .download-resume {
+        display: none;
+    }
+
+    .nav-item{
+        margin: 1rem 0;
+    }
+
+    .nav-list.active{
+        right: 0;
+    }
+
+    /* Home Landing Section */
+
+    .about-me-section{
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me-text-container{
+        width: 100%;
+    }
+
+    .about-me-text-container h1{
+        width: 100%;
+    }
+
+    .hero-image-container{
+        height: 40vw;
+        width: 40vw;
+    }
+
+    /* THE STACK SECTION */
+
+    .stack-container{
+        margin: 0;
+    }
+
+    .stack-icon-container{
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* THE PROJECTS SECTION */
+    .projects-container{
+        width: 90%
+    }
+
+    .home-project-content-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container h2{
+        padding: 0 1rem;
+    }
+
+    .home-image-container{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        height: 20vh;
+        overflow: hidden;
+        ;
+    }
+
+    .home-image-container::before{
+        content: "";
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0.9));
+        z-index: 20;
+    }
+
+    .home-project-image{
+        position: absolute;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        top: 0%;
+    }
+
+    .stack-tag-container{
+        margin: 0 0.5rem 1rem 0.5rem;
+    }
+}
+
+@media(max-width: 500px){
+    .access-work-container{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .github-repo-container, .live-project-container{
+        width: 50%;
+        min-width: 210px;
+    }
+
+    .contact-info-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem
+    }
+
+    .contact-item a, .contact-item{
+        flex-direction: row;
+        gap: 2rem;
+        width: 75%;
+        justify-content: baseline;
+    }
+
+    .contact-item img{
+        height: clamp(5rem, 5vh, 10rem);
+    }
+}
+
+@media(max-width: 430px){
+    .contact-item a, .contact-item{
+        width: 90%;
+    }
+}
