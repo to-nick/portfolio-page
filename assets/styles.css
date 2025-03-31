@@ -33,15 +33,14 @@ nav{
     font-family: "Teko", sans-serif;
     z-index: 11;
     left: 50%;
-    padding-top: 1rem;
     transform: translate(-50%);
     background-color: #3a3a3a;
 }
 
 .nav-logo{
-    font-size: clamp(3rem, 3vw, 5rem);
-    padding: 0.5rem 2rem;
-    color: rgb(255, 255, 255)
+    width: clamp(15rem, 20vw, 25rem);
+    color: rgb(255, 255, 255);
+    padding: 1rem;
 }
 
 .nav-list{
@@ -55,7 +54,7 @@ nav{
 
 .nav-item a{
     text-decoration: none;
-    color: blanchedalmond; 
+    color: rgb(223, 223, 223); 
 }
 
 .nav-item a:hover{
@@ -64,12 +63,21 @@ nav{
 }
 
 .download-resume{
-    font-size: clamp(2rem, 3vw, 3rem);
-    background-color: grey;
-    color: white;
+    font-size: clamp(1.75rem, 3vw, 3rem);
+    background-color:  rgb(225, 171, 171);
+    color: rgb(57, 55, 55);
+    border: black solid 2px;
     margin: 1rem;
-    padding: 1rem;
+    padding: 1.25rem 1rem 1rem 1rem;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.download-resume:hover{
+    color: aliceblue;
+    background-color:#090909;
+    cursor: pointer;
 }
 
 .hamburger{
@@ -159,7 +167,10 @@ nav{
     width: 100%;
     border: 2px black solid;
     border-radius: 50%;
+}
 
+.download-resume-about-section{
+    display: none;
 }
 
 .triangle-1{
@@ -677,6 +688,14 @@ nav{
     .stack-icon-container{
         padding-top: 0;
     }
+
+    .nav-list{
+        gap:2rem
+    }
+
+    .download-resume{
+        padding: 0.75rem;
+    }
 }
 
 @media(max-width: 768px){
@@ -703,7 +722,6 @@ nav{
     nav{
         position: relative;
         padding: 0rem;
-
     }
 
     .nav-list{
@@ -721,7 +739,7 @@ nav{
         z-index: 11;
     }
 
-    .download-resume {
+    nav .download-resume {
         display: none;
     }
 
@@ -743,6 +761,8 @@ nav{
 
     .about-me-text-container{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .about-me-text-container h1{
@@ -752,6 +772,25 @@ nav{
     .hero-image-container{
         height: 40vw;
         width: 40vw;
+    }
+
+    .download-resume-about-section{
+        display: flex;
+        width: 40%;
+        justify-content:  center;
+        align-self: center;
+        font-size: clamp(2rem, 2vw, 3rem) !important;
+        margin: 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 20px;
+        background-color: rgb(225, 171, 171);
+        border: solid 2px black;
+        box-shadow: black 2px 2px 5px;
+    }
+
+    .download-resume-about-section:hover{
+        background-color: #3a3a3a;
+        color: aliceblue;
     }
 
     /* THE STACK SECTION */
