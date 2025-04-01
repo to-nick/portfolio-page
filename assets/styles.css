@@ -62,7 +62,7 @@ nav{
     cursor: pointer;
 }
 
-.download-resume{
+.download-resume a{
     font-size: clamp(1.75rem, 3vw, 3rem);
     background-color:  rgb(225, 171, 171);
     color: rgb(57, 55, 55);
@@ -72,9 +72,10 @@ nav{
     border-radius: 20px;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
-.download-resume:hover{
+.download-resume a:hover{
     color: aliceblue;
     background-color:#090909;
     cursor: pointer;
@@ -171,6 +172,7 @@ nav{
 
 .download-resume-about-section{
     display: none;
+    cursor: pointer;
 }
 
 .triangle-1{
@@ -690,11 +692,11 @@ nav{
     }
 
     .nav-list{
-        gap:2rem
+        gap: 1.5rem
     }
 
     .download-resume{
-        padding: 0.75rem;
+        padding: 0;
     }
 }
 
@@ -774,6 +776,11 @@ nav{
         width: 40vw;
     }
 
+    .download-resume-container{
+        display: flex;
+        justify-content: center;
+    }
+
     .download-resume-about-section{
         display: flex;
         width: 40%;
@@ -783,9 +790,11 @@ nav{
         margin: 1rem;
         padding: 1rem 1rem 1rem 1rem;
         border-radius: 20px;
+        color: rgb(41, 39, 39);
         background-color: rgb(225, 171, 171);
         border: solid 2px black;
         box-shadow: black 2px 2px 5px;
+        text-decoration: none;
     }
 
     .download-resume-about-section:hover{
